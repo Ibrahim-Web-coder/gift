@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sania – Future Doctor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="stars" id="starContainer"></div>
@@ -23,7 +23,15 @@
     <p id="secretMessage" class="hidden">Sania, you’re born to heal the world. Keep shining.</p>
     <p id="quote" class="quoteDisplay"></p>
 
-    <div class="photo-placeholder">[Your Beautiful Photo Will Go Here]</div>
+    <div class="photo-gallery">
+      <img src="Sania.PNG" class="circle-photo" onclick="openLightbox(this.src)" alt="Sania" />
+      <img src="Untitled_edited.jpg" class="circle-photo" onclick="openLightbox(this.src)" alt="Sania 2" />
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" />
   </div>
 
   <audio id="bgMusic" src="music.MP3"></audio>
