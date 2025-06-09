@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manaim, You're My World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Profile Circle Icons in a Row -->
+  <div class="image-row">
+    <div class="glow-icon" onclick="showFullImage('Adobe Express - file (1).png')">
+      <img src="Adobe Express - file (1).png" alt="Manaim Image 1">
+    </div>
+    <div class="glow-icon" onclick="showFullImage('Screenshot 2025-05-10 194700_edited.jpg')">
+      <img src="Screenshot 2025-05-10 194700_edited.jpg" alt="Manaim Image 2">
+    </div>
+  </div>
+
+  <h1>Manaim, You're a Blessing 🌸</h1>
+
+  <div class="typewriter">
+    <h2 id="typingText"></h2>
+  </div>
+
+  <div class="description">
+  <p>
+    Your smile is a sunrise. <br>
+    Your eyes shine brighter than stars. <br>
+    With every heartbeat, I feel lucky to have you. <br>
+    You’re not just beautiful, Manaim – you’re perfect. 💖 <br>
+    You make ordinary moments magical. <br>
+    Every day with you feels like a dream I never want to wake up from. 💖
+  </p>
+</div>
+
+
+  <button class="secret-button" onclick="revealSecret()">Click for a Secret 💌</button>
+  <div class="secret-message" id="secretMessage">I love you, Manaim ❤️</div>
+
+  <button class="mode-toggle" onclick="toggleMode()">🌙 Toggle Mode</button>
+  <button onclick="scrollToTop()" class="scroll-top">🔼</button>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Fullscreen Image Viewer -->
+  <div id="fullscreen" class="fullscreen" onclick="closeFullImage()">
+    <img id="fullImage" src="" alt="Full Image">
+  </div>
+
+  <footer>
+    Made with 💖 just for you, Manaim
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

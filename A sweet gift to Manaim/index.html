@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To Manaim 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="heart-canvas"></canvas>
+
+  <div class="container">
+    <h1 class="glow">To My Sweet Manaim 💖</h1>
+
+    <!-- Photo Icon -->
+    <img src="Screenshot 2025-05-10 194700_edited.jpg" class="photo-icon" onclick="openFullImage()" alt="Manaim" title="Click to view full photo" />
+
+    <!-- Full Image Popup -->
+    <div id="full-image" class="full-image-popup" onclick="closeFullImage()">
+      <img src="Screenshot 2025-05-10 194700_edited.jpg" alt="Manaim Full" />
+    </div>
+
+    <!-- Love Message -->
+    <p id="love-text" class="love-message pulse-text"></p>
+
+    <button onclick="showSecret()" class="glow-btn">💌 Reveal Secret</button>
+    <p id="secret-text" class="hidden glow-text">I love you more than words can ever say. ❤️ You are my world.</p>
+
+    <button onclick="toggleMusic()" class="glow-btn">🎵 Toggle Music</button>
+    <audio id="bg-music" src="music.mp3" loop></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
